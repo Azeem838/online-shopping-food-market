@@ -7,17 +7,17 @@
     <title>Eat Well</title>
     <link rel="shortcut icon" href="./imgs/logo.png" />
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="nav-bar">
       <nav class="top-nav">
         <div class="contents-left">
           <img src="./imgs/logo.png" alt="logo" />
           <ul class="dropdown menu" data-dropdown-menu>
             <li class="is-dropdown-submenu-parent">
               <a href="#">Catagories</a>
-              <ul class="menu">
+              <ul class="nav-catagories menu">
                 <li><a href="#">Garden</a></li>
                 <li><a href="#">Freezer</a></li>
                 <li><a href="#">Beverages</a></li>
@@ -36,6 +36,26 @@
         </div>
       </nav>
     </header>
+
+    <section class="hero">
+      <h1>eat well</h1>
+      <h3>YOUR ONE-STOP ONLINE FOOD STORE</h3>
+      <div class="hero-search">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="is-dropdown-submenu-parent">
+            <a href="#">All Aisles</a>
+            <ul class="menu">
+              <li><a href="#">Garden</a></li>
+              <li><a href="#">Freezer</a></li>
+              <li><a href="#">Beverages</a></li>
+              <li><a href="#">Protein</a></li>
+            </ul>
+          </li>
+        </ul>
+        <input type="text" placeholder="Search thousands of groceries" />
+        <button class="button" type="submit">Search</button>
+      </div>
+    </section>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

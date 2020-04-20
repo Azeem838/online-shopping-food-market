@@ -1,0 +1,59 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../imgs/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $black-color;
+  width: 100%;
+  height: 30em;
+
+  h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    color: $red-color;
+  }
+
+  h3 {
+    padding-bottom: 2em;
+  }
+
+  .hero-search {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3em;
+
+    input {
+      width: 16em;
+      margin-right: 0.2em;
+      font-size: 1.3em;
+    }
+
+    button {
+      background: $black-color;
+      font-size: 0.8em;
+
+      &:hover {
+        background: $red-color;
+      }
+    }
+
+    ul {
+      padding-bottom: 0.5em;
+    }
+  }
+
+  .menu li a {
+    color: $black-color;
+    padding: 0 0 0 1em !important;
+    width: 7em;
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+}

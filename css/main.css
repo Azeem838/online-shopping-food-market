@@ -1,0 +1,143 @@
+.top-nav {
+  background: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-nav img {
+  width: 8em;
+  height: 8em;
+}
+
+.top-nav li a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.top-nav li a:hover {
+  color: #d35266;
+}
+
+.top-nav button {
+  background: #888;
+  padding: 0.7em;
+  float: right;
+}
+
+.contents-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents-right button {
+  margin: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.contents-right button:hover {
+  color: #d35266;
+  background-color: #383838;
+}
+
+.contents-right button:first-child {
+  background-color: #d35266;
+}
+
+.contents-right button:first-child:hover {
+  color: #d35266;
+  background-color: #383838;
+}
+
+.nav-catagories {
+  background: #383838;
+  border: none;
+}
+
+.nav-catagories:hover {
+  color: #d35266;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../imgs/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #383838;
+  width: 100%;
+  height: 30em;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 8rem;
+  color: #d35266;
+}
+
+.hero h3 {
+  padding-bottom: 2em;
+}
+
+.hero .hero-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.hero .hero-search input {
+  width: 16em;
+  margin-right: 0.2em;
+  font-size: 1.3em;
+}
+
+.hero .hero-search button {
+  background: #383838;
+  font-size: 0.8em;
+}
+
+.hero .hero-search button:hover {
+  background: #d35266;
+}
+
+.hero .hero-search ul {
+  padding-bottom: 0.5em;
+}
+
+.hero .menu li a {
+  color: #383838;
+  padding: 0 0 0 1em !important;
+  width: 7em;
+}
+
+.hero .menu li a:hover {
+  color: #d35266;
+}
+/*# sourceMappingURL=main.css.map */
