@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Starter Template</title>
+    <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="is-dropdown-submenu-parent">
+        <a href="#">Item 1</a>
+        <ul class="menu">
+          <li><a href="#">Item 1A</a></li>
+          <!-- ... -->
+        </ul>
+      </li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li><a href="#">Item 4</a></li>
+    </ul>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
