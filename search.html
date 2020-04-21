@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eat Well</title>
+    <title>Search - Eat Well</title>
     <link rel="shortcut icon" href="./imgs/logo.png" />
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home-page-css/main.css" />
   </head>
   <body>
     <header class="nav-bar">
@@ -37,29 +37,31 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>eat well</h1>
-      <h3>YOUR ONE-STOP ONLINE FOOD STORE</h3>
-      <div class="hero-search">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="is-dropdown-submenu-parent">
-            <a href="#">All Aisles</a>
-            <ul class="menu">
-              <li><a href="#">Garden</a></li>
-              <li><a href="#">Freezer</a></li>
-              <li><a href="#">Beverages</a></li>
-              <li><a href="#">Protein</a></li>
-            </ul>
-          </li>
-        </ul>
-        <input type="text" placeholder="Search thousands of groceries" />
-        <a href="./search.html"
-          ><button href class="button" type="submit">Search</button></a
-        >
+    <section class="hero-search">
+      <div class="hero-search-content">
+        <h3>eat well</h3>
+        <h6>YOUR ONE-STOP ONLINE FOOD STORE</h6>
+        <div class="hero-search2">
+          <ul class="search-menu dropdown menu" data-dropdown-menu>
+            <li class="is-dropdown-submenu-parent">
+              <a href="#">All Aisles</a>
+              <ul class="search-menu menu">
+                <li><a href="#">Garden</a></li>
+                <li><a href="#">Freezer</a></li>
+                <li><a href="#">Beverages</a></li>
+                <li><a href="#">Protein</a></li>
+              </ul>
+            </li>
+          </ul>
+          <input type="text" placeholder="Search thousands of groceries" />
+          <a href="./search.html"
+            ><button href class="button" type="submit">Search</button></a
+          >
+        </div>
       </div>
     </section>
 
-    <footer>
+    <!-- <footer>
       <div class="left-footer">
         <img src="./imgs/logo.png" alt="" />
         <p>
@@ -93,7 +95,21 @@
           <li><a href="#">Follow us</a></li>
         </ul>
       </div>
-    </footer>
+      <div class="settings">
+        <div class="settings-options">
+          <h5>Country</h5>
+          <h6>South Africa</h6>
+        </div>
+        <div class="settings-options">
+          <h5>Language</h5>
+          <h6>English</h6>
+        </div>
+        <div class="settings-options">
+          <h5>Currency</h5>
+          <h6>South African Rand (ZAR)</h6>
+        </div>
+      </div>
+    </footer> -->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

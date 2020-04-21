@@ -82,7 +82,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../imgs/hero-background.jpg");
+  background-image: url("../../imgs/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -335,5 +335,113 @@ footer {
   text-align: center;
   border: 1px solid #888;
   padding: 0.3em;
+}
+
+.hero-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #d35266;
+  background: -webkit-gradient(linear, left top, right top, from(#d35266), to(rgba(136, 136, 136, 0.947216)));
+  background: linear-gradient(90deg, #d35266 0%, rgba(136, 136, 136, 0.947216) 100%);
+  color: #383838;
+  width: 100%;
+  margin: 0 auto;
+  height: 15em;
+  padding: 2em;
+}
+
+.hero-search .hero-search-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.hero-search h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+
+.hero-search h6 {
+  color: white;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.hero-search .hero-search2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.hero-search .hero-search2 input {
+  width: 15em;
+  margin: 0 0.2em;
+  font-size: 1.3em;
+  padding: 0.5em;
+}
+
+.hero-search .hero-search2 button {
+  background: #383838;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.hero-search .hero-search2 button:hover {
+  background: #d35266;
+}
+
+.search-menu {
+  padding: 0.15em 0.5em;
+  background-color: white;
+}
+
+.search-menu li a {
+  color: #383838;
+  width: 5em;
+  display: inline;
+  margin-right: 0.5em;
+}
+
+.search-menu li a:first-child {
+  padding: 0 !important;
+}
+
+.search-menu li a:not(:first-child) {
+  padding: 0.5em 0 !important;
+}
+
+.search-menu li a:hover {
+  color: #d35266;
+}
+
+.dropdown.menu > li.is-active > a {
+  color: #383838;
+  background-color: white;
+}
+
+.dropdown.menu > li.is-active > ahover {
+  color: #d35266;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: #383838 transparent transparent !important;
+  margin-left: 1em;
+  right: -17px;
 }
 /*# sourceMappingURL=main.css.map */

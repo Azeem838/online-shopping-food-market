@@ -1,0 +1,98 @@
+.hero-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: rgb(211, 82, 102);
+  background: linear-gradient(
+    90deg,
+    rgba(211, 82, 102, 1) 0%,
+    rgba(136, 136, 136, 0.9472163865546218) 100%
+  );
+  color: $black-color;
+  width: 100%;
+  margin: 0 auto;
+  height: 15em;
+  padding: 2em;
+
+  .hero-search-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+  }
+
+  h6 {
+    color: white;
+
+    padding-bottom: 0.5em;
+    font-weight: 700;
+  }
+
+  .hero-search2 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3em;
+
+    input {
+      width: 15em;
+      margin: 0 0.2em;
+      font-size: 1.3em;
+      padding: 0.5em;
+    }
+
+    button {
+      background: $black-color;
+      font-size: 0.7em;
+      margin: 0;
+
+      &:hover {
+        background: $red-color;
+      }
+    }
+  }
+}
+
+.search-menu {
+  padding: 0.15em 0.5em;
+  background-color: white;
+}
+
+.search-menu li a {
+  color: $black-color;
+  width: 5em;
+  display: inline;
+  margin-right: 0.5em;
+
+  &:first-child {
+    padding: 0 !important;
+  }
+
+  &:not(:first-child) {
+    padding: 0.5em 0 !important;
+  }
+
+  &:hover {
+    color: $red-color;
+  }
+}
+
+.dropdown.menu > li.is-active > a {
+  color: $black-color;
+  background-color: white;
+
+  &hover {
+    color: $red-color;
+  }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: $black-color transparent transparent !important;
+  margin-left: 1em;
+  right: -17px;
+}
