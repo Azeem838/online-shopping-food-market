@@ -276,23 +276,21 @@ footer {
   justify-items: center;
 }
 
-.middle-footer {
-  margin-top: 3em;
-}
-
-.middle-footer h4 {
-  color: #d35266;
-  font-weight: 700;
-  border-bottom: 3px solid #d35266;
-  padding-bottom: 0.3em;
-}
-
 .middle-footer a {
   padding-left: 0 !important;
   color: #888;
 }
 
+.right-footer a {
+  padding-left: 0 !important;
+  color: #888;
+}
+
 .middle-footer a:hover {
+  color: #d35266;
+}
+
+.right-footer a:hover {
   color: #d35266;
 }
 
@@ -307,13 +305,15 @@ footer {
   padding-bottom: 0.3em;
 }
 
-.right-footer a {
-  padding-left: 0 !important;
-  color: #888;
+.middle-footer {
+  margin-top: 3em;
 }
 
-.right-footer a:hover {
+.middle-footer h4 {
   color: #d35266;
+  font-weight: 700;
+  border-bottom: 3px solid #d35266;
+  padding-bottom: 0.3em;
 }
 
 .settings-options {
@@ -413,7 +413,6 @@ footer {
 
 .search-menu li a {
   color: #383838;
-  width: 5em;
   display: inline;
   margin-right: 0.5em;
 }
@@ -443,5 +442,68 @@ footer {
   border-color: #383838 transparent transparent !important;
   margin-left: 1em;
   right: -17px;
+}
+
+.search-grid {
+  width: 75%;
+  margin: 3em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 2em;
+}
+
+.filters {
+  border-right: 1px solid #888;
+}
+
+.filters legend {
+  border-bottom: 1px solid #888;
+  margin: 1em 0;
+  width: 90%;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-results {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+.search-results p {
+  grid-column: 1/-1;
+  color: #888;
+  border-bottom: 1px solid #888;
+}
+
+.search-results h3 {
+  margin-top: 2em;
+}
+
+.search-results button {
+  margin-top: 5em;
+}
+
+.search-results div {
+  border: 1px solid #888;
+  padding: 2em;
+  place-self: center;
+}
+
+.search-results ul {
+  grid-column: 1/-1;
+  place-self: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+.search-grid {
+  width: 75%;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2em;
+}
+
+.filters {
+  border-right: 1px solid $gray-color;
+
+  legend {
+    border-bottom: 1px solid $gray-color;
+    margin: 1em 0;
+    width: 90%;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+
+  p {
+    grid-column: 1/-1;
+    color: $gray-color;
+    border-bottom: 1px solid $gray-color;
+  }
+
+  h3 {
+    margin-top: 2em;
+  }
+
+  button {
+    margin-top: 5em;
+  }
+
+  div {
+    border: 1px solid $gray-color;
+    padding: 2em;
+    place-self: center;
+  }
+
+  ul {
+    grid-column: 1/-1;
+    place-self: center;
+  }
+}

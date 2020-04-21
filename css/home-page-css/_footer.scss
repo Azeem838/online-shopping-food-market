@@ -8,37 +8,43 @@ footer {
   justify-items: center;
 }
 
-.middle-footer {
-  margin-top: 3em;
-  h4 {
-    color: $red-color;
-    font-weight: 700;
-    border-bottom: 3px solid $red-color;
-    padding-bottom: 0.3em;
-  }
-  a {
-    padding-left: 0 !important;
-    color: $gray-color;
-    &:hover {
-      color: $red-color;
-    }
-  }
+.middle-footer a {
+  padding-left: 0 !important;
+  color: $gray-color;
+}
+
+.right-footer a {
+  padding-left: 0 !important;
+  color: $gray-color;
+}
+
+.middle-footer a:hover {
+  color: $red-color;
+}
+
+.right-footer a:hover {
+  color: $red-color;
 }
 
 .right-footer {
   margin-top: 3em;
+
   h4 {
     color: $red-color;
     font-weight: 700;
     border-bottom: 3px solid $red-color;
     padding-bottom: 0.3em;
   }
-  a {
-    padding-left: 0 !important;
-    color: $gray-color;
-    &:hover {
-      color: $red-color;
-    }
+}
+
+.middle-footer {
+  margin-top: 3em;
+
+  h4 {
+    color: $red-color;
+    font-weight: 700;
+    border-bottom: 3px solid $red-color;
+    padding-bottom: 0.3em;
   }
 }
 
@@ -46,11 +52,13 @@ footer {
   display: flex;
   margin-top: 3em;
   padding: 2em 0 0.5em 0;
+
   h5 {
     color: $red-color;
     padding-right: 1em;
     font-weight: 600;
   }
+
   h6 {
     width: 100%;
     text-align: center;
