@@ -172,7 +172,6 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 1.5em;
-  padding: 16px;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-flow: column;
@@ -496,6 +495,32 @@ footer {
   right: -17px;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero-search-content {
+    margin-left: 0 !important;
+  }
+  .hero-search-content .hero-search2 input {
+    width: 5em;
+    margin: 0 0.2em;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+  .search-menu {
+    font-size: 1rem;
+    padding: 0.4em 0.2em;
+    margin: 0;
+  }
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .search-menu {
+    display: none;
+  }
+}
+
 .search-grid {
   width: 75%;
   margin: 3em auto;
@@ -534,7 +559,7 @@ fieldset {
   grid-gap: 2em;
 }
 
-.search-results p {
+.search-results .search-details {
   grid-column: 1/-1;
   color: #888;
   border-bottom: 1px solid #888;
@@ -548,7 +573,7 @@ fieldset {
   margin-top: 5em;
 }
 
-.search-results div {
+.search-results div:not:first-child {
   border: 1px solid #888;
   padding: 2em;
   place-self: center;
@@ -557,5 +582,63 @@ fieldset {
 .search-results ul {
   grid-column: 1/-1;
   place-self: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .filter-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-grid {
+    width: 95%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .filter-toggle {
+    display: inline;
+    margin: 0 0 1rem 0 !important;
+    background: #383838;
+  }
+  .filter-toggle:hover {
+    background: #d35266;
+  }
+  .search-results {
+    place-items: center;
+  }
+  .search-results h3 {
+    margin-top: 1em;
+  }
+  .search-results button {
+    margin-top: 2em;
+  }
+  .filters-small {
+    padding-left: 1em;
+  }
+  .filters-large {
+    display: none;
+  }
+  .search-details {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .search-details p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-results {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */

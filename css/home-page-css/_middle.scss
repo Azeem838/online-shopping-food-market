@@ -1,12 +1,14 @@
 .middle {
   width: 75%;
   margin: 0 auto;
+
   h3 {
     margin: 2em 0 1em 0;
     color: $gray-color;
     opacity: 0.8;
     font-weight: 700;
   }
+
   & > h3:not(:first-child) {
     border-top: 5px solid $red-color;
     padding-top: 1.5em;
@@ -18,7 +20,6 @@
   padding: 0 !important;
   display: grid;
   grid-gap: 1.5em;
-  padding: 16px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-flow: column;
   grid-auto-columns: minmax(250px, 1fr);
@@ -28,6 +29,7 @@
   div {
     border: 1px solid $black-color;
     padding: 1em;
+
     h3 {
       margin-top: 3em;
       color: $red-color;
@@ -67,21 +69,25 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5em;
   margin-bottom: 5em;
+
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 15em;
     position: relative;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       overflow: hidden;
+
       &:hover {
         background: $black-color;
       }
     }
+
     h4 {
       color: white;
       font-weight: 900;

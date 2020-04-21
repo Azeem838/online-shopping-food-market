@@ -94,3 +94,34 @@
   margin-left: 1em;
   right: -17px;
 }
+
+@media only screen and (max-width: 768px) {
+  .hero-search-content {
+    margin-left: 0 !important;
+
+    .hero-search2 {
+      input {
+        width: 5em;
+        margin: 0 0.2em;
+        font-size: 1em;
+        padding: 0.5em;
+      }
+    }
+  }
+
+  .search-menu {
+    font-size: 1rem;
+    padding: 0.4em 0.2em;
+    margin: 0;
+  }
+
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .search-menu {
+    display: none;
+  }
+}

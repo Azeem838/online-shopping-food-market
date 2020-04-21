@@ -11,10 +11,46 @@
   </head>
   <body>
     <header class="nav-bar">
+      <div
+        class="title-bar"
+        data-responsive-toggle="responsive-menu"
+        data-hide-for="large"
+      >
+        <button
+          class="menu-icon"
+          type="button"
+          data-toggle="responsive-menu"
+        ></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <div class="top-bar hide-for-large" id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#0">Catagories</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">Garden</a></li>
+                <li><a href="#0">Freezer</a></li>
+                <li><a href="#0">Beverages</a></li>
+                <li><a href="#0">Protein</a></li>
+                <li><a href="#0">Meal Recipes</a></li>
+              </ul>
+            </li>
+            <li><a href="#0">Specials</a></li>
+            <li><a href="#0">What's New</a></li>
+          </ul>
+        </div>
+      </div>
       <nav class="top-nav">
         <div class="contents-left">
           <img src="./imgs/logo.png" alt="logo" />
-          <ul class="dropdown menu" data-dropdown-menu>
+
+          <ul
+            class="dropdown menu show-for-large"
+            id="expand-menu"
+            data-dropdown-menu
+          >
             <li class="is-dropdown-submenu-parent">
               <a href="#">Catagories</a>
               <ul class="nav-catagories menu">
@@ -62,7 +98,7 @@
     </section>
 
     <section class="search-grid">
-      <div class="filters">
+      <div class="filters filters-large">
         <fieldset class="category-filter">
           <legend>FILTER BY CATEGORY</legend>
 
@@ -147,7 +183,16 @@
         </fieldset>
       </div>
       <div class="search-results">
-        <p>203 results for "Milk" in "All Categories"</p>
+        <div class="search-details">
+          <button
+            type="button"
+            class="button filter-toggle"
+            data-toggle="offCanvasLeft1"
+          >
+            Filter Search
+          </button>
+          <p>203 results for "Milk" in "All Categories"</p>
+        </div>
         <div>
           <img src="./imgs/milk-search.jpeg" alt="milk-search" />
           <p>Parmalat EverFresh Milk</p>
@@ -203,6 +248,94 @@
             >
           </li>
         </ul>
+      </div>
+      <div
+        class="off-canvas position-left filters filters-small"
+        id="offCanvasLeft1"
+        data-off-canvas
+      >
+        <fieldset class="category-filter">
+          <legend>FILTER BY CATEGORY</legend>
+
+          <div>
+            <input id="checkbox1" type="checkbox" />
+            <label for="checkbox1">BAKING INGREDIENTS</label>
+          </div>
+
+          <div>
+            <input id="checkbox2" type="checkbox" />
+            <label for="checkbox2">BISCUITS & CRACKERS</label>
+          </div>
+
+          <div>
+            <input id="checkbox3" type="checkbox" /><label for="checkbox3"
+              >CANNED FOODS & PACKETS</label
+            >
+          </div>
+
+          <div>
+            <input id="checkbox4" type="checkbox" /><label for="checkbox4"
+              >CHOCOLATES & SWEETS</label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="promotion-filter">
+          <legend>FILTER BY PROMOTION</legend>
+          <div>
+            <input id="checkbox5" type="checkbox" /><label for="checkbox5"
+              >ON PROMOTION</label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="brand-filter">
+          <legend>FILTER BY BRAND</legend>
+
+          <div>
+            <input id="checkbox6" type="checkbox" /><label for="checkbox6"
+              >ADDIS</label
+            >
+          </div>
+          <div>
+            <input id="checkbox7" type="checkbox" required /><label
+              for="checkbox7"
+              >ALL JOY</label
+            >
+          </div>
+          <div>
+            <input id="checkbox8" type="checkbox" /><label for="checkbox8"
+              >ALMOND</label
+            >
+          </div>
+          <div>
+            <input id="checkbox9" type="checkbox" /><label for="checkbox9"
+              >BAKERS</label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="price-filter">
+          <legend>FILTER BY PRICE</legend>
+          <div>
+            <input id="checkbox10" type="checkbox" /><label for="checkbox10"
+              >R0-R49.99</label
+            >
+          </div>
+          <div>
+            <input id="checkbox11" type="checkbox" required /><label
+              for="checkbox11"
+              >R50-R199.99</label
+            >
+          </div>
+          <div>
+            <input id="checkbox12" type="checkbox" /><label for="checkbox12"
+              >R200-R499.99</label
+            >
+          </div>
+          <div>
+            <input id="checkbox13" type="checkbox" /><label for="checkbox13"
+              >R500-R999.99</label
+            >
+          </div>
+        </fieldset>
       </div>
     </section>
 

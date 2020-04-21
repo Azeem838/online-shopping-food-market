@@ -26,7 +26,7 @@ fieldset {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
 
-  p {
+  .search-details {
     grid-column: 1/-1;
     color: $gray-color;
     border-bottom: 1px solid $gray-color;
@@ -40,7 +40,7 @@ fieldset {
     margin-top: 5em;
   }
 
-  div {
+  div:not:first-child {
     border: 1px solid $gray-color;
     padding: 2em;
     place-self: center;
@@ -49,5 +49,64 @@ fieldset {
   ul {
     grid-column: 1/-1;
     place-self: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .filter-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-grid {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+
+  .filter-toggle {
+    display: inline;
+    margin: 0 0 1rem 0 !important;
+    background: $black-color;
+
+    &:hover {
+      background: $red-color;
+    }
+  }
+
+  .search-results {
+    place-items: center;
+
+    h3 {
+      margin-top: 1em;
+    }
+
+    button {
+      margin-top: 2em;
+    }
+  }
+
+  .filters-small {
+    padding-left: 1em;
+  }
+
+  .filters-large {
+    display: none;
+  }
+
+  .search-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      align-self: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-results {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
