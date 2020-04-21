@@ -1,0 +1,31 @@
+footer {
+  width: 75%;
+  margin: 0 auto;
+  border-top: 5px solid $red-color;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5em;
+  justify-items: center;
+}
+
+.middle-footer {
+  margin-top: 3em;
+  h4 {
+    color: $gray-color;
+    font-weight: 700;
+  }
+  a {
+    padding-left: 0 !important;
+  }
+}
+
+.right-footer {
+  margin-top: 3em;
+  h4 {
+    color: $gray-color;
+    font-weight: 700;
+  }
+  a {
+    padding-left: 0 !important;
+  }
+}

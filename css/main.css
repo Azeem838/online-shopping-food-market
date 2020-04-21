@@ -146,10 +146,16 @@
   margin: 0 auto;
 }
 
-.middle h2 {
+.middle h3 {
   margin: 2em 0 1em 0;
-  color: #383838;
+  color: #888;
   opacity: 0.8;
+  font-weight: 700;
+}
+
+.middle > h3:not(:first-child) {
+  border-top: 5px solid #d35266;
+  padding-top: 1.5em;
 }
 
 .top-sellers {
@@ -254,5 +260,43 @@
   opacity: 0.8;
   width: 100%;
   text-align: center;
+}
+
+footer {
+  width: 75%;
+  margin: 0 auto;
+  border-top: 5px solid #d35266;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5em;
+  justify-items: center;
+}
+
+.middle-footer {
+  margin-top: 3em;
+}
+
+.middle-footer h4 {
+  color: #888;
+  font-weight: 700;
+}
+
+.middle-footer a {
+  padding-left: 0 !important;
+}
+
+.right-footer {
+  margin-top: 3em;
+}
+
+.right-footer h4 {
+  color: #888;
+  font-weight: 700;
+}
+
+.right-footer a {
+  padding-left: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */
