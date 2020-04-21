@@ -270,8 +270,8 @@ footer {
   border-top: 5px solid #d35266;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 5em;
   justify-items: center;
 }
@@ -281,12 +281,19 @@ footer {
 }
 
 .middle-footer h4 {
-  color: #888;
+  color: #d35266;
   font-weight: 700;
+  border-bottom: 3px solid #d35266;
+  padding-bottom: 0.3em;
 }
 
 .middle-footer a {
   padding-left: 0 !important;
+  color: #888;
+}
+
+.middle-footer a:hover {
+  color: #d35266;
 }
 
 .right-footer {
@@ -294,11 +301,39 @@ footer {
 }
 
 .right-footer h4 {
-  color: #888;
+  color: #d35266;
   font-weight: 700;
+  border-bottom: 3px solid #d35266;
+  padding-bottom: 0.3em;
 }
 
 .right-footer a {
   padding-left: 0 !important;
+  color: #888;
+}
+
+.right-footer a:hover {
+  color: #d35266;
+}
+
+.settings-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  padding: 2em 0 0.5em 0;
+}
+
+.settings-options h5 {
+  color: #d35266;
+  padding-right: 1em;
+  font-weight: 600;
+}
+
+.settings-options h6 {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #888;
+  padding: 0.3em;
 }
 /*# sourceMappingURL=main.css.map */

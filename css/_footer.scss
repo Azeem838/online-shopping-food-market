@@ -3,7 +3,7 @@ footer {
   margin: 0 auto;
   border-top: 5px solid $red-color;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5em;
   justify-items: center;
 }
@@ -11,21 +11,50 @@ footer {
 .middle-footer {
   margin-top: 3em;
   h4 {
-    color: $gray-color;
+    color: $red-color;
     font-weight: 700;
+    border-bottom: 3px solid $red-color;
+    padding-bottom: 0.3em;
   }
   a {
     padding-left: 0 !important;
+    color: $gray-color;
+    &:hover {
+      color: $red-color;
+    }
   }
 }
 
 .right-footer {
   margin-top: 3em;
   h4 {
-    color: $gray-color;
+    color: $red-color;
     font-weight: 700;
+    border-bottom: 3px solid $red-color;
+    padding-bottom: 0.3em;
   }
   a {
     padding-left: 0 !important;
+    color: $gray-color;
+    &:hover {
+      color: $red-color;
+    }
+  }
+}
+
+.settings-options {
+  display: flex;
+  margin-top: 3em;
+  padding: 2em 0 0.5em 0;
+  h5 {
+    color: $red-color;
+    padding-right: 1em;
+    font-weight: 600;
+  }
+  h6 {
+    width: 100%;
+    text-align: center;
+    border: 1px solid $gray-color;
+    padding: 0.3em;
   }
 }
