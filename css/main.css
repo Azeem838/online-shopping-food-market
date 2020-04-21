@@ -252,10 +252,12 @@
   background: #383838;
 }
 
-.diets div h3 {
+.diets div h4 {
   color: white;
   font-weight: 900;
   position: absolute;
+  top: 0;
+  left: 0;
   background: #383838;
   opacity: 0.8;
   width: 100%;
