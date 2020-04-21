@@ -140,4 +140,119 @@
 .hero .menu li a:hover {
   color: #d35266;
 }
+
+.middle {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.middle h2 {
+  margin: 2em 0 1em 0;
+  color: #383838;
+  opacity: 0.8;
+}
+
+.top-sellers {
+  width: 100%;
+  padding: 0 !important;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5em;
+  padding: 16px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(250px, 1fr);
+  overflow-x: scroll;
+  color: #383838;
+}
+
+.top-sellers div {
+  border: 1px solid #383838;
+  padding: 1em;
+}
+
+.top-sellers div h3 {
+  margin-top: 3em;
+  color: #d35266;
+}
+
+.top-sellers div img {
+  width: 15em;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  margin: 1.5em 0 0 0;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.cart button {
+  margin: 0;
+  background: #383838;
+}
+
+.cart button:hover {
+  background: #d35266;
+}
+
+.cart svg {
+  font-size: 1.5em;
+  color: #d35266;
+}
+
+.diets {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5em;
+  margin-bottom: 5em;
+}
+
+.diets div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15em;
+  position: relative;
+}
+
+.diets div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.diets div img:hover {
+  background: #383838;
+}
+
+.diets div h3 {
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  background: #383838;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
