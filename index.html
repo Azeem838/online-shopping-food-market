@@ -10,11 +10,55 @@
     <link rel="stylesheet" href="css/home-page-css/main.css" />
   </head>
   <body>
+    <div class="callout" data-closable>
+      <button class="close-button" data-close>&times;</button>
+      <p>
+        PLEASE NOTE THAT DUE TO THE CURRENT CORONAVIRUS PANDEMIC, DELIVERIES
+        MIGHT TAKE LONGER THAN USUAL.
+      </p>
+    </div>
+
     <header class="nav-bar">
+      <div
+        class="title-bar"
+        data-responsive-toggle="responsive-menu"
+        data-hide-for="large"
+      >
+        <button
+          class="menu-icon"
+          type="button"
+          data-toggle="responsive-menu"
+        ></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <div class="top-bar hide-for-large" id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#0">Catagories</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">Garden</a></li>
+                <li><a href="#0">Freezer</a></li>
+                <li><a href="#0">Beverages</a></li>
+                <li><a href="#0">Protein</a></li>
+                <li><a href="#0">Meal Recipes</a></li>
+              </ul>
+            </li>
+            <li><a href="#0">Specials</a></li>
+            <li><a href="#0">What's New</a></li>
+          </ul>
+        </div>
+      </div>
       <nav class="top-nav">
         <div class="contents-left">
           <img src="./imgs/logo.png" alt="logo" />
-          <ul class="dropdown menu" data-dropdown-menu>
+
+          <ul
+            class="dropdown menu show-for-large"
+            id="expand-menu"
+            data-dropdown-menu
+          >
             <li class="is-dropdown-submenu-parent">
               <a href="#">Catagories</a>
               <ul class="nav-catagories menu">
