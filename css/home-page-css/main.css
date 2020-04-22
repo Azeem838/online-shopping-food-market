@@ -144,6 +144,10 @@
   background: #d35266;
 }
 
+.hero .hero-search-home-page button a {
+  color: white;
+}
+
 .hero .hero-search-home-page ul {
   padding-bottom: 0;
   width: 35%;
