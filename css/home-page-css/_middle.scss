@@ -8,15 +8,30 @@
     opacity: 0.8;
     font-weight: 700;
   }
+}
 
-  & > h3:not(:first-child) {
-    border-top: 3px solid $red-color;
-    padding-top: 1.5em;
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  margin: 1.5em 0 0 0;
+  border: none !important;
+  padding: 0 !important;
+
+  button {
+    margin: 0;
+    background: $black-color;
+  }
+
+  svg {
+    font-size: 1.5em;
+    color: $red-color;
   }
 }
 
 .top-sellers-main-div {
   display: flex;
+
   & > button {
     font-size: 1.5rem;
     background: $black-color;
@@ -36,6 +51,10 @@
       margin-left: 1em;
     }
   }
+}
+
+.cart button:hover {
+  background: $red-color;
 }
 
 .top-sellers {
@@ -70,27 +89,9 @@
   }
 }
 
-.cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center !important;
-  margin: 1.5em 0 0 0;
-  border: none !important;
-  padding: 0 !important;
-
-  button {
-    margin: 0;
-    background: $black-color;
-
-    &:hover {
-      background: $red-color;
-    }
-  }
-
-  svg {
-    font-size: 1.5em;
-    color: $red-color;
-  }
+.middle h3:not(:first-child) {
+  border-top: 3px solid $red-color;
+  padding-top: 1.5em;
 }
 
 .diets {
