@@ -21,21 +21,26 @@
     padding-bottom: 2em;
   }
 
-  .hero-search {
+  .hero-search-home-page {
     display: flex;
     align-items: center;
     font-weight: 700;
     font-size: 1.3em;
+    max-width: 80%;
+    justify-content: center;
 
     input {
-      width: 16em;
+      width: 55%;
       margin-right: 0.2em;
-      font-size: 1.3em;
+      font-size: 1rem;
+      margin-bottom: 0;
+      padding: 1.5em;
     }
 
     button {
       background: $black-color;
       font-size: 0.8em;
+      margin-bottom: 0;
 
       &:hover {
         background: $red-color;
@@ -43,17 +48,41 @@
     }
 
     ul {
-      padding-bottom: 0.5em;
+      padding-bottom: 0;
+      width: 35%;
     }
   }
 
   .menu li a {
-    color: $black-color;
-    padding: 0 0 0 1em !important;
-    width: 7em;
+    color: white;
+    padding: 0.65em !important;
+    margin-right: 0.2em;
+    background: $gray-color;
 
     &:hover {
-      color: $red-color;
+      background: white;
+      color: $black-color;
+    }
+  }
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero-search-home-page {
+    ul {
+      display: none;
     }
   }
 }

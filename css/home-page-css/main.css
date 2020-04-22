@@ -109,7 +109,7 @@
   padding-bottom: 2em;
 }
 
-.hero .hero-search {
+.hero .hero-search-home-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,35 +118,61 @@
           align-items: center;
   font-weight: 700;
   font-size: 1.3em;
+  max-width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.hero .hero-search input {
-  width: 16em;
+.hero .hero-search-home-page input {
+  width: 55%;
   margin-right: 0.2em;
-  font-size: 1.3em;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 1.5em;
 }
 
-.hero .hero-search button {
+.hero .hero-search-home-page button {
   background: #383838;
   font-size: 0.8em;
+  margin-bottom: 0;
 }
 
-.hero .hero-search button:hover {
+.hero .hero-search-home-page button:hover {
   background: #d35266;
 }
 
-.hero .hero-search ul {
-  padding-bottom: 0.5em;
+.hero .hero-search-home-page ul {
+  padding-bottom: 0;
+  width: 35%;
 }
 
 .hero .menu li a {
-  color: #383838;
-  padding: 0 0 0 1em !important;
-  width: 7em;
+  color: white;
+  padding: 0.65em !important;
+  margin-right: 0.2em;
+  background: #888;
 }
 
 .hero .menu li a:hover {
-  color: #d35266;
+  background: white;
+  color: #383838;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+  .hero-search-home-page ul {
+    display: none;
+  }
 }
 
 .middle {
