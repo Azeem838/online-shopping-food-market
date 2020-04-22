@@ -4,11 +4,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   background: rgb(211, 82, 102);
-  background: linear-gradient(
-    90deg,
-    rgba(211, 82, 102, 1) 0%,
-    rgba(136, 136, 136, 0.9472163865546218) 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      rgba(211, 82, 102, 1) 0%,
+      rgba(136, 136, 136, 0.9472163865546218) 100%
+    );
   color: $black-color;
   width: 100%;
   margin: 0 auto;
