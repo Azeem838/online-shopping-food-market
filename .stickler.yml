@@ -5,7 +5,7 @@ linters:
     config: 'stylelint.config.js'
 files:
   ignore:
-    - "css/home-page-css/main.css"
+    - css/home-page-css/main.css
 # PLEASE DO NOT enable auto fixing options
 # if you need extra support from you linter - do it in your local env as described in README for this config
 
