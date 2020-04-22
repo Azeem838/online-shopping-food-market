@@ -44,8 +44,7 @@
       </div>
       <nav class="top-nav">
         <div class="contents-left">
-          <img src="./imgs/logo.png" alt="logo" />
-
+          <a href="index.html"><img src="./imgs/logo.png" alt="logo" /></a>
           <ul
             class="dropdown menu show-for-large"
             id="expand-menu"
@@ -90,9 +89,9 @@
             </li>
           </ul>
           <input type="text" placeholder="Search thousands of groceries" />
-          <a href="./search.html"
-            ><button href class="button" type="submit">Search</button></a
-          >
+          <form action="search.html" method="get" target="_blank">
+            <button class="button" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </section>
@@ -103,23 +102,23 @@
           <legend>FILTER BY CATEGORY</legend>
 
           <div>
-            <input id="checkbox1" type="checkbox" />
+            <input type="checkbox" />
             <label for="checkbox1">BAKING INGREDIENTS</label>
           </div>
 
           <div>
-            <input id="checkbox2" type="checkbox" />
+            <input type="checkbox" />
             <label for="checkbox2">BISCUITS & CRACKERS</label>
           </div>
 
           <div>
-            <input id="checkbox3" type="checkbox" /><label for="checkbox3"
+            <input type="checkbox" /><label for="checkbox3"
               >CANNED FOODS & PACKETS</label
             >
           </div>
 
           <div>
-            <input id="checkbox4" type="checkbox" /><label for="checkbox4"
+            <input type="checkbox" /><label for="checkbox4"
               >CHOCOLATES & SWEETS</label
             >
           </div>
@@ -127,56 +126,44 @@
         <fieldset class="promotion-filter">
           <legend>FILTER BY PROMOTION</legend>
           <div>
-            <input id="checkbox5" type="checkbox" /><label for="checkbox5"
-              >ON PROMOTION</label
-            >
+            <input type="checkbox" /><label for="checkbox5">ON PROMOTION</label>
           </div>
         </fieldset>
         <fieldset class="brand-filter">
           <legend>FILTER BY BRAND</legend>
 
           <div>
-            <input id="checkbox6" type="checkbox" /><label for="checkbox6"
-              >ADDIS</label
-            >
+            <input type="checkbox" /><label for="checkbox6">ADDIS</label>
           </div>
           <div>
-            <input id="checkbox7" type="checkbox" required /><label
-              for="checkbox7"
+            <input type="checkbox" required /><label for="checkbox7"
               >ALL JOY</label
             >
           </div>
           <div>
-            <input id="checkbox8" type="checkbox" /><label for="checkbox8"
-              >ALMOND</label
-            >
+            <input type="checkbox" /><label for="checkbox8">ALMOND</label>
           </div>
           <div>
-            <input id="checkbox9" type="checkbox" /><label for="checkbox9"
-              >BAKERS</label
-            >
+            <input type="checkbox" /><label for="checkbox9">BAKERS</label>
           </div>
         </fieldset>
         <fieldset class="price-filter">
           <legend>FILTER BY PRICE</legend>
           <div>
-            <input id="checkbox10" type="checkbox" /><label for="checkbox10"
-              >R0-R49.99</label
-            >
+            <input type="checkbox" /><label for="checkbox10">R0-R49.99</label>
           </div>
           <div>
-            <input id="checkbox11" type="checkbox" required /><label
-              for="checkbox11"
+            <input type="checkbox" required /><label for="checkbox11"
               >R50-R199.99</label
             >
           </div>
           <div>
-            <input id="checkbox12" type="checkbox" /><label for="checkbox12"
+            <input type="checkbox" /><label for="checkbox12"
               >R200-R499.99</label
             >
           </div>
           <div>
-            <input id="checkbox13" type="checkbox" /><label for="checkbox13"
+            <input type="checkbox" /><label for="checkbox13"
               >R500-R999.99</label
             >
           </div>
@@ -200,36 +187,36 @@
           <button type="button" class="button">ADD TO CART</button>
         </div>
         <div>
-          <img src="./imgs/milk-search.jpeg" alt="milk-search" />
-          <p>Parmalat EverFresh Milk</p>
-          <h3>R57.99</h3>
+          <img src="./imgs/full-cream-milk.jpeg" alt="milk-search" />
+          <p>Full Cream Milk 1lx6</p>
+          <h3>R80.99</h3>
           <button type="button" class="button">ADD TO CART</button>
         </div>
         <div>
-          <img src="./imgs/milk-search.jpeg" alt="milk-search" />
-          <p>Parmalat EverFresh Milk</p>
-          <h3>R57.99</h3>
+          <img src="./imgs/2l-milk.jpeg" alt="milk-search" />
+          <p>2l Full-Cream Milk</p>
+          <h3>R28.99</h3>
           <button type="button" class="button">ADD TO CART</button>
         </div>
         <div>
-          <img src="./imgs/milk-search.jpeg" alt="milk-search" />
-          <p>Parmalat EverFresh Milk</p>
-          <h3>R57.99</h3>
+          <img src="./imgs/low-fat-milk.jpeg" alt="milk-search" />
+          <p>Low Fat Milk 1lx6</p>
+          <h3>R80.99</h3>
           <button type="button" class="button">ADD TO CART</button>
         </div>
         <div>
-          <img src="./imgs/milk-search.jpeg" alt="milk-search" />
-          <p>Parmalat EverFresh Milk</p>
-          <h3>R57.99</h3>
+          <img src="./imgs/almond-breeze-milk.jpeg" alt="milk-search" />
+          <p>Almond Breeze Milk</p>
+          <h3>R43.99</h3>
           <button type="button" class="button">ADD TO CART</button>
         </div>
         <div>
-          <img src="./imgs/milk-search.jpeg" alt="milk-search" />
-          <p>Parmalat EverFresh Milk</p>
-          <h3>R57.99</h3>
+          <img src="./imgs/dairy-milk.jpeg" alt="milk-search" />
+          <p>Dairy Milk 80g Slab</p>
+          <h3>R17.99</h3>
           <button type="button" class="button">ADD TO CART</button>
         </div>
-        <ul class="pagination" role="navigation" aria-label="Pagination">
+        <ul class="pagination">
           <li class="disabled">
             Previous <span class="show-for-sr">page</span>
           </li>

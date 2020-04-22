@@ -1,27 +1,30 @@
-# Project Name
+# Online Shopping Food Market
 
-> One paragraph statement about the project.
+> This project is an online shopping food market where the home page and search results page have been created.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./imgs/screenshot-shopping.png)
 
-Additional description about the project and its features.
+This project includes the following:
+
+1. A homepage that displays the different products
+2. A search results page
+3. Responsive design for desktop, tablet and mobile
+4. Coronavirus delivery alert
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5, CSS and Sass
+- Foundation 6
+- Font Awesome
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
-
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -37,21 +40,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
-
 ## Authors
 
-👤 **Author1**
+👤 **Azeem Ahmed**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Azeem838](https://github.com/Azeem838)
 
 ## 🤝 Contributing
 
@@ -65,9 +58,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Mohammed Awad (https://www.behance.net/M_Awad) on Behance for the design and layout.
 
 ## 📝 License
 
