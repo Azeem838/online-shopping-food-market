@@ -19,28 +19,7 @@ This project includes the following:
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-## Authors
+[Live Demo Link](https://rawcdn.githack.com/Azeem838/online-shopping-food-market/7ed06c67f3260197407af6a2c36b5a4499d783a0/index.html)
 
 👤 **Azeem Ahmed**
 
@@ -50,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Azeem838/online-shopping-food-market/issues).
 
 ## Show your support
 
