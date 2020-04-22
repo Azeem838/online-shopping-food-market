@@ -65,6 +65,25 @@
     }
   }
 }
+
+#responsive-menu {
+  background: $gray-color;
+
+  ul {
+    background: $gray-color;
+
+    li {
+      a {
+        color: $black-color;
+        &:hover {
+          background: $black-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   display: none;
 }

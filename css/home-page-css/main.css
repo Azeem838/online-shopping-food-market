@@ -159,6 +159,23 @@
   color: #383838;
 }
 
+#responsive-menu {
+  background: #888;
+}
+
+#responsive-menu ul {
+  background: #888;
+}
+
+#responsive-menu ul li a {
+  color: #383838;
+}
+
+#responsive-menu ul li a:hover {
+  background: #383838;
+  color: white;
+}
+
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   display: none;
 }
