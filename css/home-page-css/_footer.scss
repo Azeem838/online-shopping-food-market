@@ -1,7 +1,8 @@
 footer {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
-  border-top: 5px solid $red-color;
+  padding: 0 3em;
+  border-top: 3px solid $red-color;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5em;
@@ -32,7 +33,7 @@ footer {
   h4 {
     color: $red-color;
     font-weight: 700;
-    border-bottom: 3px solid $red-color;
+    border-bottom: 2px solid $red-color;
     padding-bottom: 0.3em;
   }
 }
@@ -43,7 +44,7 @@ footer {
   h4 {
     color: $red-color;
     font-weight: 700;
-    border-bottom: 3px solid $red-color;
+    border-bottom: 2px solid $red-color;
     padding-bottom: 0.3em;
   }
 }

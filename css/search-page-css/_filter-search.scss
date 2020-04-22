@@ -40,6 +40,16 @@ fieldset {
     margin-top: 5em;
   }
 
+  div {
+    button {
+      background: $red-color;
+      color: white;
+      &:hover {
+        background: $black-color;
+      }
+    }
+  }
+
   div:not:first-child {
     border: 1px solid $gray-color;
     padding: 2em;
@@ -50,6 +60,10 @@ fieldset {
     grid-column: 1/-1;
     place-self: center;
   }
+}
+
+.pagination .current {
+  background: $red-color;
 }
 
 @media only screen and (min-width: 769px) {
