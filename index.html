@@ -24,12 +24,19 @@
         data-responsive-toggle="responsive-menu"
         data-hide-for="large"
       >
-        <button
-          class="menu-icon"
-          type="button"
-          data-toggle="responsive-menu"
-        ></button>
-        <div class="title-bar-title">Menu</div>
+        <div>
+          <img src="./imgs/logo.png" alt="" />
+          <button
+            class="menu-icon"
+            type="button"
+            data-toggle="responsive-menu"
+          ></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+        <div class="contents-right">
+          <button class="button" type="button">Join Us</button>
+          <button class="button" type="button">Sign In</button>
+        </div>
       </div>
 
       <div class="top-bar hide-for-large" id="responsive-menu">
@@ -82,490 +89,560 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>eat well</h1>
-      <h3>YOUR ONE-STOP ONLINE FOOD STORE</h3>
-      <div class="hero-search-home-page">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="is-dropdown-submenu-parent">
-            <a href="#">All Aisles</a>
-            <ul class="menu">
-              <li><a href="#">Garden</a></li>
-              <li><a href="#">Freezer</a></li>
-              <li><a href="#">Beverages</a></li>
-              <li><a href="#">Protein</a></li>
-            </ul>
-          </li>
-        </ul>
-        <input type="text" placeholder="Search thousands of groceries" />
-        <form action="search.html" method="get" target="_blank">
-          <button class="button" type="submit">Search</button>
-        </form>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <h1>eat well</h1>
+        <h3>YOUR ONE-STOP ONLINE FOOD STORE</h3>
+        <div class="hero-search-home-page">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="is-dropdown-submenu-parent">
+              <a href="#"><i class="fas fa-caret-down"></i>All Aisles</a>
+              <ul class="menu">
+                <li><a href="#">Garden</a></li>
+                <li><a href="#">Freezer</a></li>
+                <li><a href="#">Beverages</a></li>
+                <li><a href="#">Protein</a></li>
+              </ul>
+            </li>
+          </ul>
+          <input type="text" placeholder="Search thousands of groceries" />
+          <form action="search.html" method="get" target="_blank">
+            <button class="button" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+      <section class="hot-deals">
+        <h3>HOT DEALS</h3>
 
-    <section class="middle">
-      <h3 id="top-sellers" data-magellan-target="top-sellers">Top Sellers</h3>
-      <div class="top-sellers-main-div">
-        <button id="slideLeft" class="button" type="button">
-          <i class="fas fa-chevron-circle-left"></i>
-        </button>
-        <div id="container" class="top-sellers">
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/hot-cross-buns.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R30.99</h3>
-            <p class="item-desc">Hot Cross Buns 6pk</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/bread.jpeg" alt="item-img" />
-            <h3 class="price">R15.99</h3>
-            <p class="item-desc">Brown Sliced Bread</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/banana.jpg" alt="item-img" />
-            <h3 class="price">R37.99</h3>
-            <p class="item-desc">Bananas 1.2kg</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/tomato.jpg" alt="item-img" />
-            <h3 class="price">R23.99</h3>
-            <p class="item-desc">Tomatoes 1kg</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/eggs.jpg" alt="item-img" />
-            <h3 class="price">R75.99</h3>
-            <p class="item-desc">Eggs 18pk</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/grapes.jpg" alt="item-img" />
-            <h3 class="price">R41.99</h3>
-            <p class="item-desc">Seedless White Grapes</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/mushroom.jpeg" alt="item-img" />
-            <h3 class="price">R28.99</h3>
-            <p class="item-desc">White Mushroom 250g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/hotdog.jpg" alt="item-img" />
-            <h3 class="price">R19.99</h3>
-            <p class="item-desc">White Hotdog rolls 6pk</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
+        <div class="hot-deals-flex">
+          <img src="./imgs/nutti.jpeg" alt="nutti" />
+          <div class="hot-deals-info">
+            <h4>Nuttikrust 200g</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              natus similique provident tempora aspernatur ipsam id ullam
+              laborum, dignissimos beatae maxime eos amet soluta ad non ratione!
+              Perspiciatis unde alias dignissimos voluptate et commodi, nam
+              nihil ut quibusdam officia ipsa, cum praesentium aperiam magni ea
+              labore incidunt necessitatibus repudiandae inventore.
+            </p>
+            <span><b>Brand: </b>Bakers</span>
+            <span><b>Location: </b>Lorem ipsum dolor sit amet.</span>
+            <div class="hot-deals-buttons">
+              <button class="button">R50.00</button>
+              <button class="button">Purchase Now</button>
             </div>
           </div>
         </div>
-        <button id="slideRight" class="button" type="button">
-          <i class="fas fa-chevron-circle-right"></i>
-        </button>
-      </div>
-      <h3 id="bakery" data-magellan-target="bakery">Bakery</h3>
-      <div class="top-sellers-main-div">
-        <button id="slideLeftBakery" class="button" type="button">
-          <i class="fas fa-chevron-circle-left"></i>
-        </button>
-        <div id="bakeryBtn" class="top-sellers">
-          <div>
-            <img class="item-img" src="./imgs/tennis.jpeg" alt="item-img" />
-            <h3 class="price">R21.99</h3>
-            <p class="item-desc">Tennis Biscuits 200g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/lemon.jpeg" alt="item-img" />
-            <h3 class="price">R22.99</h3>
-            <p class="item-desc">Lemon Creams 200g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/creams.jpeg" alt="item-img" />
-            <h3 class="price">R26.99</h3>
-            <p class="item-desc">Romany Creams 200g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/salt-cracks.jpeg"
-              alt="item-img"
-            />
-            <h3 class="price">R46.99</h3>
-            <p class="item-desc">Bakers Salticrax 400g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/nutti.jpeg" alt="item-img" />
-            <h3 class="price">R32.99</h3>
-            <p class="item-desc">Bakers Nuttikrust</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/zoo.jpeg" alt="item-img" />
-            <h3 class="price">R39.99</h3>
-            <p class="item-desc">Bakers Zoo Biscuits</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/provita.jpeg" alt="item-img" />
-            <h3 class="price">R51.99</h3>
-            <p class="item-desc">Provita 500g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/chedders.jpeg" alt="item-img" />
-            <h3 class="price">R30.99</h3>
-            <p class="item-desc">Mini Cheddars 198g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <button id="slideRightBakery" class="button" type="button">
-          <i class="fas fa-chevron-circle-right"></i>
-        </button>
-      </div>
-      <h3 id="butchery" data-magellan-target="butchery">Butchery</h3>
-      <div class="top-sellers-main-div">
-        <button id="slideLeftButchery" class="button" type="button">
-          <i class="fas fa-chevron-circle-left"></i>
-        </button>
-        <div id="butcheryBtn" class="top-sellers">
-          <div>
-            <img class="item-img" src="./imgs/biltong.jpeg" alt="item-img" />
-            <h3 class="price">R129.99</h3>
-            <p class="item-desc">Biltong 350g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/mixed-chicken.jpeg"
-              alt="item-img"
-            />
-            <h3 class="price">R46.99</h3>
-            <p class="item-desc">Mixed Chicken</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/minute-steak.jpeg"
-              alt="item-img"
-            />
-            <h3 class="price">R43.99</h3>
-            <p class="item-desc">Minute Steak 300g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/boerewors.jpeg" alt="item-img" />
-            <h3 class="price">R63.99</h3>
-            <p class="item-desc">Boerewors 500g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/t-bone-steak.jpeg"
-              alt="item-img"
-            />
-            <h3 class="price">R97.99</h3>
-            <p class="item-desc">T-bone Steak 500g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/shred-tuna.jpeg" alt="item-img" />
-            <h3 class="price">R19.99</h3>
-            <p class="item-desc">Shredded Tuna</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/beefers.jpeg" alt="item-img" />
-            <h3 class="price">R75.99</h3>
-            <p class="item-desc">Beefers 800g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/meatballs.jpeg" alt="item-img" />
-            <h3 class="price">R32.99</h3>
-            <p class="item-desc">Meatballs 400g</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <button id="slideRightButchery" class="button" type="button">
-          <i class="fas fa-chevron-circle-right"></i>
-        </button>
-      </div>
-      <h3 id="coffee" data-magellan-target="coffee">Imported Coffees</h3>
-      <div class="top-sellers-main-div">
-        <button id="slideLeftCoffee" class="button" type="button">
-          <i class="fas fa-chevron-circle-left"></i>
-        </button>
-        <div id="coffeeBtn" class="top-sellers">
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/creme-brule-coffee.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R85.00</h3>
-            <p class="item-desc">Creme Brulee Cofee</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/uganda-coffee.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R95.00</h3>
-            <p class="item-desc">Single Origin Uganda</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/colombia-coffee.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R95.00</h3>
-            <p class="item-desc">Single Origin Colombia</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/lazy-bones-blend.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R90.00</h3>
-            <p class="item-desc">Lazy Bones Blend</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/great-dane.jpg" alt="item-img" />
-            <h3 class="price">R80.00</h3>
-            <p class="item-desc">Great Dane</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img class="item-img" src="./imgs/moca-java.jpg" alt="item-img" />
-            <h3 class="price">R80.00</h3>
-            <p class="item-desc">Mocha Java</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/french-vanilla.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R80.00</h3>
-            <p class="item-desc">French Vanilla</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-          <div>
-            <img
-              class="item-img"
-              src="./imgs/dutch-chocolate.jpg"
-              alt="item-img"
-            />
-            <h3 class="price">R80.00</h3>
-            <p class="item-desc">Dutch Chocolate</p>
-            <div class="cart">
-              <button type="button" class="button">
-                Add To Cart
-              </button>
-              <i class="far fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <button id="slideRightCoffee" class="button" type="button">
-          <i class="fas fa-chevron-circle-right"></i>
-        </button>
-      </div>
+      </section>
 
-      <h3 id="diet" data-magellan-target="diet">Choose a Lifestyle</h3>
-      <div class="diets">
-        <div class="vegan">
-          <h4>Vegan</h4>
-          <img src="./imgs/vegan.jpeg" alt="vegan" />
+      <section class="middle-conainer">
+        <div class="middle">
+          <h3 id="top-sellers" data-magellan-target="top-sellers">
+            Top Sellers
+          </h3>
+          <div class="top-sellers-main-div">
+            <button id="slideLeft" class="button" type="button">
+              <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <div id="container" class="top-sellers">
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/hot-cross-buns.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R30.99</h3>
+                <p class="item-desc">Hot Cross Buns 6pk</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/bread.jpeg" alt="item-img" />
+                <h3 class="price">R15.99</h3>
+                <p class="item-desc">Brown Sliced Bread</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/banana.jpg" alt="item-img" />
+                <h3 class="price">R37.99</h3>
+                <p class="item-desc">Bananas 1.2kg</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/tomato.jpg" alt="item-img" />
+                <h3 class="price">R23.99</h3>
+                <p class="item-desc">Tomatoes 1kg</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/eggs.jpg" alt="item-img" />
+                <h3 class="price">R75.99</h3>
+                <p class="item-desc">Eggs 18pk</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/grapes.jpg" alt="item-img" />
+                <h3 class="price">R41.99</h3>
+                <p class="item-desc">Seedless White Grapes</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/mushroom.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R28.99</h3>
+                <p class="item-desc">White Mushroom 250g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/hotdog.jpg" alt="item-img" />
+                <h3 class="price">R19.99</h3>
+                <p class="item-desc">White Hotdog rolls 6pk</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <button id="slideRight" class="button" type="button">
+              <i class="fas fa-chevron-circle-right"></i>
+            </button>
+          </div>
+          <h3 id="bakery" data-magellan-target="bakery">Bakery</h3>
+          <div class="top-sellers-main-div">
+            <button id="slideLeftBakery" class="button" type="button">
+              <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <div id="bakeryBtn" class="top-sellers">
+              <div>
+                <img class="item-img" src="./imgs/tennis.jpeg" alt="item-img" />
+                <h3 class="price">R21.99</h3>
+                <p class="item-desc">Tennis Biscuits 200g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/lemon.jpeg" alt="item-img" />
+                <h3 class="price">R22.99</h3>
+                <p class="item-desc">Lemon Creams 200g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/creams.jpeg" alt="item-img" />
+                <h3 class="price">R26.99</h3>
+                <p class="item-desc">Romany Creams 200g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/salt-cracks.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R46.99</h3>
+                <p class="item-desc">Bakers Salticrax 400g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/nutti.jpeg" alt="item-img" />
+                <h3 class="price">R32.99</h3>
+                <p class="item-desc">Bakers Nuttikrust</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img class="item-img" src="./imgs/zoo.jpeg" alt="item-img" />
+                <h3 class="price">R39.99</h3>
+                <p class="item-desc">Bakers Zoo Biscuits</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/provita.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R51.99</h3>
+                <p class="item-desc">Provita 500g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/chedders.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R30.99</h3>
+                <p class="item-desc">Mini Cheddars 198g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <button id="slideRightBakery" class="button" type="button">
+              <i class="fas fa-chevron-circle-right"></i>
+            </button>
+          </div>
+          <h3 id="butchery" data-magellan-target="butchery">Butchery</h3>
+          <div class="top-sellers-main-div">
+            <button id="slideLeftButchery" class="button" type="button">
+              <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <div id="butcheryBtn" class="top-sellers">
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/biltong.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R129.99</h3>
+                <p class="item-desc">Biltong 350g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/mixed-chicken.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R46.99</h3>
+                <p class="item-desc">Mixed Chicken</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/minute-steak.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R43.99</h3>
+                <p class="item-desc">Minute Steak 300g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/boerewors.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R63.99</h3>
+                <p class="item-desc">Boerewors 500g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/t-bone-steak.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R97.99</h3>
+                <p class="item-desc">T-bone Steak 500g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/shred-tuna.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R19.99</h3>
+                <p class="item-desc">Shredded Tuna</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/beefers.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R75.99</h3>
+                <p class="item-desc">Beefers 800g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/meatballs.jpeg"
+                  alt="item-img"
+                />
+                <h3 class="price">R32.99</h3>
+                <p class="item-desc">Meatballs 400g</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <button id="slideRightButchery" class="button" type="button">
+              <i class="fas fa-chevron-circle-right"></i>
+            </button>
+          </div>
+          <h3 id="coffee" data-magellan-target="coffee">Imported Coffees</h3>
+          <div class="top-sellers-main-div">
+            <button id="slideLeftCoffee" class="button" type="button">
+              <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <div id="coffeeBtn" class="top-sellers">
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/creme-brule-coffee.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R85.00</h3>
+                <p class="item-desc">Creme Brulee Cofee</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/uganda-coffee.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R95.00</h3>
+                <p class="item-desc">Single Origin Uganda</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/colombia-coffee.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R95.00</h3>
+                <p class="item-desc">Single Origin Colombia</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/lazy-bones-blend.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R90.00</h3>
+                <p class="item-desc">Lazy Bones Blend</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/great-dane.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R80.00</h3>
+                <p class="item-desc">Great Dane</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/moca-java.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R80.00</h3>
+                <p class="item-desc">Mocha Java</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/french-vanilla.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R80.00</h3>
+                <p class="item-desc">French Vanilla</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="item-img"
+                  src="./imgs/dutch-chocolate.jpg"
+                  alt="item-img"
+                />
+                <h3 class="price">R80.00</h3>
+                <p class="item-desc">Dutch Chocolate</p>
+                <div class="cart">
+                  <button type="button" class="button">
+                    Add To Cart
+                  </button>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <button id="slideRightCoffee" class="button" type="button">
+              <i class="fas fa-chevron-circle-right"></i>
+            </button>
+          </div>
+
+          <h3 id="diet" data-magellan-target="diet">Choose a Lifestyle</h3>
+          <div class="diets">
+            <div class="vegan">
+              <h4>Vegan</h4>
+              <img src="./imgs/vegan.jpeg" alt="vegan" />
+            </div>
+            <div class="keto">
+              <h4>Keto</h4>
+              <img src="./imgs/keto.jpg" alt="keto" />
+            </div>
+            <div class="gluten-free">
+              <h4>Gluten Free</h4>
+              <img src="./imgs/gluten-free.jpg" alt="gluten-free" />
+            </div>
+            <div class="sugar-free">
+              <h4>Sugar Free</h4>
+              <img src="./imgs/sugar-free.jpg" alt="sugar-free" />
+            </div>
+          </div>
         </div>
-        <div class="keto">
-          <h4>Keto</h4>
-          <img src="./imgs/keto.jpg" alt="keto" />
-        </div>
-        <div class="gluten-free">
-          <h4>Gluten Free</h4>
-          <img src="./imgs/gluten-free.jpg" alt="gluten-free" />
-        </div>
-        <div class="sugar-free">
-          <h4>Sugar Free</h4>
-          <img src="./imgs/sugar-free.jpg" alt="sugar-free" />
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="left-footer">

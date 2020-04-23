@@ -13,11 +13,11 @@
   color: $black-color;
   width: 100%;
   margin: 0 auto;
-  height: 15em;
+  height: 12em;
   padding: 2em;
 
   .hero-search-content {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -25,48 +25,58 @@
     font-weight: 700;
     font-size: 3rem;
     color: white;
+    margin-bottom: 0;
+    line-height: 1em;
   }
 
   h6 {
     color: white;
-    padding-bottom: 0.5em;
-    font-weight: 700;
+    margin-bottom: 0;
+    font-weight: 400;
+    padding-bottom: 1em;
   }
 
   .hero-search2 {
     display: flex;
     align-items: center;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 1.3em;
 
     input {
-      width: 15em;
+      width: 50%;
       margin: 0 0.2em;
-      font-size: 1rem;
-      padding: 0.5em;
+      line-height: 2.5;
+      font-size: 1.2rem;
+      padding: 1.3em;
+      color: $gray-color;
     }
 
     button {
       background: $black-color;
-      font-size: 0.7em;
+      color: $gray-color;
+      font-size: 1.2rem;
       margin: 0;
+      padding: 0.8em 1.3em;
 
       &:hover {
         background: $red-color;
+        color: white;
       }
     }
   }
 }
 
 .search-menu {
-  padding: 0.15em 0.5em;
   background-color: white;
+  line-height: 2.5;
+  width: 30%;
+  max-width: 200px;
 }
 
 .search-menu li a {
-  color: $black-color;
+  color: $gray-color;
   display: inline;
-  margin-right: 0.5em;
+  font-size: 1.2rem;
 
   &:first-child {
     padding: 0 !important;
@@ -78,6 +88,11 @@
 
   &:hover {
     color: $red-color;
+  }
+
+  svg {
+    margin: 0 1em 0 0.5em;
+    color: black;
   }
 }
 
@@ -99,15 +114,6 @@
 @media only screen and (max-width: 768px) {
   .hero-search-content {
     margin-left: 0 !important;
-
-    .hero-search2 {
-      input {
-        width: 5em;
-        margin: 0 0.2em;
-        font-size: 1em;
-        padding: 0.5em;
-      }
-    }
   }
 
   .search-menu {
@@ -118,6 +124,14 @@
 
   .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
     display: none;
+  }
+
+  .search-menu li a {
+    font-size: 1rem;
+
+    svg {
+      margin: 0 0.1em;
+    }
   }
 }
 

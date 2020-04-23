@@ -38,12 +38,14 @@
     }
 
     button {
+      color: $gray-color;
       background: $black-color;
       font-size: 0.8em;
       margin-bottom: 0;
 
       &:hover {
         background: $red-color;
+        color: white;
       }
 
       a {
@@ -58,14 +60,18 @@
   }
 
   .menu li a {
-    color: white;
+    color: $gray-color;
     padding: 0.65em !important;
     margin-right: 0.2em;
-    background: $gray-color;
+    background: white;
 
     &:hover {
       background: white;
       color: $black-color;
+    }
+
+    svg {
+      margin-right: 0.2em;
     }
   }
 }
@@ -101,6 +107,7 @@
 
     h3 {
       font-size: 1.5rem;
+      text-align: center;
     }
   }
 
