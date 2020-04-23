@@ -3,6 +3,7 @@
 > This project is an online shopping food market where the home page and search results page have been created.
 
 ![screenshot](./imgs/screenshot-shopping.png)
+![screenshot](./imgs/search-page-screenshot.png)
 
 This project includes the following:
 
