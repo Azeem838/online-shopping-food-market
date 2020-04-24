@@ -3,10 +3,6 @@ $gray-color: #888;
 $black-color: #383838;
 $dropdownmenu-arrow-color: orange;
 
-body {
-  min-width: 420px;
-}
-
 @import "./header";
 @import "./hero";
 @import "./middle";
