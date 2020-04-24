@@ -1,0 +1,142 @@
+.hero-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: rgb(211, 82, 102);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(211, 82, 102, 1) 0%,
+      rgba(136, 136, 136, 0.9472163865546218) 100%
+    );
+  color: $black-color;
+  width: 100%;
+  margin: 0 auto;
+  height: 12em;
+  padding: 2em;
+
+  .hero-search-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+
+  h6 {
+    color: white;
+    margin-bottom: 0;
+    font-weight: 400;
+    padding-bottom: 1em;
+  }
+
+  .hero-search2 {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.3em;
+
+    input {
+      width: 50%;
+      margin: 0 0.2em;
+      line-height: 2.5;
+      font-size: 1.2rem;
+      padding: 1.3em;
+      color: $gray-color;
+    }
+
+    button {
+      background: $black-color;
+      color: $gray-color;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 0.8em 1.3em;
+
+      &:hover {
+        background: $red-color;
+        color: white;
+      }
+    }
+  }
+}
+
+.search-menu {
+  background-color: white;
+  line-height: 2.5;
+  width: 30%;
+  max-width: 200px;
+}
+
+.search-menu li a {
+  color: $gray-color;
+  display: inline;
+  font-size: 1.2rem;
+
+  &:first-child {
+    padding: 0 !important;
+  }
+
+  &:not(:first-child) {
+    padding: 0.5em 0 !important;
+  }
+
+  &:hover {
+    color: $red-color;
+  }
+
+  svg {
+    margin: 0 1em 0 0.5em;
+    color: black;
+  }
+}
+
+.dropdown.menu > li.is-active > a {
+  color: $black-color;
+  background-color: white;
+
+  &hover {
+    color: $red-color;
+  }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: $black-color transparent transparent !important;
+  margin-left: 1em;
+  right: -17px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-search-content {
+    margin-left: 0 !important;
+  }
+
+  .search-menu {
+    font-size: 1rem;
+    padding: 0.4em 0.2em;
+    margin: 0;
+  }
+
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    display: none;
+  }
+
+  .search-menu li a {
+    font-size: 1rem;
+
+    svg {
+      margin: 0 0.1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .search-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search - Eat Well</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/home-page-css/main.css" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div
+        class="title-bar"
+        data-responsive-toggle="responsive-menu"
+        data-hide-for="large"
+      >
+        <div>
+          <img src="./imgs/logo.png" alt="" />
+          <button
+            class="menu-icon"
+            type="button"
+            data-toggle="responsive-menu"
+          ></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+        <div class="contents-right">
+          <button class="button" type="button">Join Us</button>
+          <button class="button" type="button">Sign In</button>
+        </div>
+      </div>
+
+      <div class="top-bar hide-for-large" id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#0">Categories</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">Garden</a></li>
+                <li><a href="#0">Freezer</a></li>
+                <li><a href="#0">Beverages</a></li>
+                <li><a href="#0">Protein</a></li>
+                <li><a href="#0">Meal Recipes</a></li>
+              </ul>
+            </li>
+            <li><a href="#0">Specials</a></li>
+            <li><a href="#0">What's New</a></li>
+            <li><a href="#0">Feed the Hungry</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <div class="contents-left">
+          <img src="./imgs/logo.png" alt="logo" />
+        </div>
+        <ul
+          class="dropdown menu show-for-large"
+          id="expand-menu"
+          data-dropdown-menu
+        >
+          <li class="is-dropdown-submenu-parent">
+            <a href="#">Categories</a>
+            <ul class="nav-catagories menu">
+              <li><a href="#">Garden</a></li>
+              <li><a href="#">Freezer</a></li>
+              <li><a href="#">Beverages</a></li>
+              <li><a href="#">Protein</a></li>
+              <li><a href="#">Meal Recipes</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Feed the Hungry</a></li>
+        </ul>
+
+        <div class="contents-right">
+          <button class="button" type="button">Join Us</button>
+          <button class="button" type="button">Sign In</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-search">
+      <div class="hero-search-content">
+        <h3>eat well</h3>
+        <h6>Search thousands of food items</h6>
+        <div class="hero-search2">
+          <ul class="search-menu dropdown menu" data-dropdown-menu>
+            <li class="is-dropdown-submenu-parent">
+              <a href="#"><i class="fas fa-caret-down"></i>All Aisles</a>
+              <ul class="search-menu menu">
+                <li><a href="#">Garden</a></li>
+                <li><a href="#">Freezer</a></li>
+                <li><a href="#">Beverages</a></li>
+                <li><a href="#">Protein</a></li>
+              </ul>
+            </li>
+          </ul>
+          <input type="text" placeholder="Search thousands of groceries" />
+          <form action="search.html" method="get" target="_blank">
+            <button class="button" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter-results-section">
+      <div class="search-grid">
+        <div class="filters filters-large">
+          <fieldset class="category-filter">
+            <legend>FILTER BY CATEGORY</legend>
+
+            <div>
+              <input type="checkbox" />
+              <label for="checkbox1">BAKING INGREDIENTS</label>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <label for="checkbox2">BISCUITS & CRACKERS</label>
+            </div>
+
+            <div>
+              <input type="checkbox" /><label for="checkbox3"
+                >CANNED FOODS & PACKETS</label
+              >
+            </div>
+
+            <div>
+              <input type="checkbox" /><label for="checkbox4"
+                >CHOCOLATES & SWEETS</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="promotion-filter">
+            <legend>FILTER BY PROMOTION</legend>
+            <div>
+              <input type="checkbox" /><label for="checkbox5"
+                >ON PROMOTION</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="brand-filter">
+            <legend>FILTER BY BRAND</legend>
+
+            <div>
+              <input type="checkbox" /><label for="checkbox6">ADDIS</label>
+            </div>
+            <div>
+              <input type="checkbox" required /><label for="checkbox7"
+                >ALL JOY</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" /><label for="checkbox8">ALMOND</label>
+            </div>
+            <div>
+              <input type="checkbox" /><label for="checkbox9">BAKERS</label>
+            </div>
+          </fieldset>
+          <fieldset class="price-filter">
+            <legend>FILTER BY PRICE</legend>
+            <div>
+              <input type="checkbox" /><label for="checkbox10">R0-R49.99</label>
+            </div>
+            <div>
+              <input type="checkbox" required /><label for="checkbox11"
+                >R50-R199.99</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" /><label for="checkbox12"
+                >R200-R499.99</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" /><label for="checkbox13"
+                >R500-R999.99</label
+              >
+            </div>
+          </fieldset>
+        </div>
+        <div class="search-results">
+          <div class="search-details">
+            <button
+              type="button"
+              class="button filter-toggle"
+              data-toggle="offCanvasLeft1"
+            >
+              Filter Search
+            </button>
+            <p>203 results for "Milk" in "All Categories"</p>
+          </div>
+          <div class="search-result-container">
+            <img src="./imgs/milk-search.jpeg" alt="milk-search" />
+            <div class="search-result-info">
+              <div>
+                <h5>Parmalat EverFresh Milk</h5>
+                <h6>R57.99</h6>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus hic laborum, corrupti, asperiores illo
+                perspiciatis delectus sit ea minus cupiditate autem repellat
+                maxime modi enim aspernatur, fugiat amet. Labore, facere.
+              </p>
+              <div>
+                <b>Location: </b><span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <div class="search-result-meta">
+                <span>23 April, 2020</span>
+                <button type="button" class="button">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="search-result-container">
+            <img src="./imgs/full-cream-milk.jpeg" alt="milk-search" />
+            <div class="search-result-info">
+              <div>
+                <h5>Full Cream Milk 1lx6</h5>
+                <h6>R80.99</h6>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus hic laborum, corrupti, asperiores illo
+                perspiciatis delectus sit ea minus cupiditate autem repellat
+                maxime modi enim aspernatur, fugiat amet. Labore, facere.
+              </p>
+              <div>
+                <b>Location: </b><span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <div class="search-result-meta">
+                <span>23 April, 2020</span>
+                <button type="button" class="button">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="search-result-container">
+            <img src="./imgs/2l-milk.jpeg" alt="milk-search" />
+            <div class="search-result-info">
+              <div>
+                <h5>2l Full-Cream Milk</h5>
+                <h6>R28.99</h6>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus hic laborum, corrupti, asperiores illo
+                perspiciatis delectus sit ea minus cupiditate autem repellat
+                maxime modi enim aspernatur, fugiat amet. Labore, facere.
+              </p>
+              <div>
+                <b>Location: </b><span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <div class="search-result-meta">
+                <span>23 April, 2020</span>
+                <button type="button" class="button">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="search-result-container">
+            <img src="./imgs/low-fat-milk.jpeg" alt="milk-search" />
+            <div class="search-result-info">
+              <div>
+                <h5>Low Fat Milk 1lx6k</h5>
+                <h6>R80.99</h6>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus hic laborum, corrupti, asperiores illo
+                perspiciatis delectus sit ea minus cupiditate autem repellat
+                maxime modi enim aspernatur, fugiat amet. Labore, facere.
+              </p>
+              <div>
+                <b>Location: </b><span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <div class="search-result-meta">
+                <span>23 April, 2020</span>
+                <button type="button" class="button">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="search-result-container">
+            <img src="./imgs/almond-breeze-milk.jpeg" alt="milk-search" />
+            <div class="search-result-info">
+              <div>
+                <h5>Almond Breeze Milk</h5>
+                <h6>R43.99</h6>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus hic laborum, corrupti, asperiores illo
+                perspiciatis delectus sit ea minus cupiditate autem repellat
+                maxime modi enim aspernatur, fugiat amet. Labore, facere.
+              </p>
+              <div>
+                <b>Location: </b><span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <div class="search-result-meta">
+                <span>23 April, 2020</span>
+                <button type="button" class="button">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="search-result-container"
+            style="display: flex; flex-direction: column;"
+          >
+            <div style="display: flex;">
+              <img src="./imgs/dairy-milk.jpeg" alt="milk-search" />
+              <div class="search-result-info">
+                <div>
+                  <h5>Dairy Milk 80g Slab</h5>
+                  <h6>R17.99</h6>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus hic laborum, corrupti, asperiores illo
+                  perspiciatis delectus sit ea minus cupiditate autem repellat
+                  maxime modi enim aspernatur, fugiat amet. Labore, facere.
+                </p>
+                <div>
+                  <b>Location: </b><span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div class="search-result-meta">
+                  <span>23 April, 2020</span>
+                  <button type="button" class="button">ADD TO CART</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="off-canvas position-left filters filters-small"
+          id="offCanvasLeft1"
+          data-off-canvas
+        >
+          <fieldset class="category-filter">
+            <legend>FILTER BY CATEGORY</legend>
+
+            <div>
+              <input id="checkbox1" type="checkbox" />
+              <label for="checkbox1">BAKING INGREDIENTS</label>
+            </div>
+
+            <div>
+              <input id="checkbox2" type="checkbox" />
+              <label for="checkbox2">BISCUITS & CRACKERS</label>
+            </div>
+
+            <div>
+              <input id="checkbox3" type="checkbox" /><label for="checkbox3"
+                >CANNED FOODS & PACKETS</label
+              >
+            </div>
+
+            <div>
+              <input id="checkbox4" type="checkbox" /><label for="checkbox4"
+                >CHOCOLATES & SWEETS</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="promotion-filter">
+            <legend>FILTER BY PROMOTION</legend>
+            <div>
+              <input id="checkbox5" type="checkbox" /><label for="checkbox5"
+                >ON PROMOTION</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="brand-filter">
+            <legend>FILTER BY BRAND</legend>
+
+            <div>
+              <input id="checkbox6" type="checkbox" /><label for="checkbox6"
+                >ADDIS</label
+              >
+            </div>
+            <div>
+              <input id="checkbox7" type="checkbox" required /><label
+                for="checkbox7"
+                >ALL JOY</label
+              >
+            </div>
+            <div>
+              <input id="checkbox8" type="checkbox" /><label for="checkbox8"
+                >ALMOND</label
+              >
+            </div>
+            <div>
+              <input id="checkbox9" type="checkbox" /><label for="checkbox9"
+                >BAKERS</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="price-filter">
+            <legend>FILTER BY PRICE</legend>
+            <div>
+              <input id="checkbox10" type="checkbox" /><label for="checkbox10"
+                >R0-R49.99</label
+              >
+            </div>
+            <div>
+              <input id="checkbox11" type="checkbox" required /><label
+                for="checkbox11"
+                >R50-R199.99</label
+              >
+            </div>
+            <div>
+              <input id="checkbox12" type="checkbox" /><label for="checkbox12"
+                >R200-R499.99</label
+              >
+            </div>
+            <div>
+              <input id="checkbox13" type="checkbox" /><label for="checkbox13"
+                >R500-R999.99</label
+              >
+            </div>
+          </fieldset>
+        </div>
+        <ul class="pagination">
+          <li class="disabled">
+            Previous <span class="show-for-sr">page</span>
+          </li>
+          <li class="current">
+            <span class="show-for-sr">You're on page</span> 1
+          </li>
+          <li><a href="#0" aria-label="Page 2">2</a></li>
+          <li><a href="#0" aria-label="Page 3">3</a></li>
+          <li><a href="#0" aria-label="Page 4">4</a></li>
+          <li class="ellipsis" aria-hidden="true"></li>
+          <li><a href="#0" aria-label="Page 12">12</a></li>
+          <li><a href="#0" aria-label="Page 13">13</a></li>
+          <li>
+            <a href="#0" aria-label="Next page"
+              >Next <span class="show-for-sr">page</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="left-footer">
+        <img src="./imgs/logo.png" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+          veritatis harum, nihil dolores ut in neque totam iusto, vitae a
+          temporibus! Omnis ab laudantium veniam quae excepturi id, impedit
+          quas, optio distinctio fuga facere quos molestiae, dolorem
+          voluptatibus accusantium. Neque nemo, voluptatibus quis inventore modi
+          eos vero?
+        </p>
+      </div>
+      <div class="middle-footer">
+        <h4>Catagories</h4>
+        <ul class="cat-footer menu vertical" data-magellan>
+          <li><a href="#top-sellers">Top Sellers</a></li>
+          <li><a href="#bakery">Bakery</a></li>
+          <li><a href="#butchery">Butchery</a></li>
+          <li><a href="#coffee">Imported Coffees</a></li>
+          <li><a href="#diet">Choose a Lifestyle</a></li>
+        </ul>
+      </div>
+      <div class="right-footer">
+        <h4>Navigation</h4>
+        <ul class="menu vertical">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Follow us</a></li>
+        </ul>
+      </div>
+      <div class="settings">
+        <div class="settings-options">
+          <h5>Country</h5>
+          <h6>South Africa</h6>
+        </div>
+        <div class="settings-options">
+          <h5>Language</h5>
+          <h6>English</h6>
+        </div>
+        <div class="settings-options">
+          <h5>Currency</h5>
+          <h6>South African Rand (ZAR)</h6>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      defer
+    ></script>
+  </body>
+</html>

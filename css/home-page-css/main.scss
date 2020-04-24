@@ -1,0 +1,15 @@
+$red-color: #d35266;
+$gray-color: #888;
+$black-color: #383838;
+$dropdownmenu-arrow-color: orange;
+
+body {
+  min-width: 420px;
+}
+
+@import "./header";
+@import "./hero";
+@import "./middle";
+@import "./footer";
+@import "../search-page-css/hero-search";
+@import "../search-page-css/filter-search";
