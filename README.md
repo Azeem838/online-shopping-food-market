@@ -20,7 +20,7 @@ This project includes the following:
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Azeem838/online-shopping-food-market/6d53d893f313053b909a9073351cd444739fb56f/index.html)
+[Live Demo Link](https://azeem838.github.io/online-shopping-food-market/)
 
 👤 **Azeem Ahmed**
 
