@@ -1,6 +1,6 @@
 # Online Shopping Food Market
 
-> This project is an online shopping food market where the home page and search results page have been created.
+> This project is an online shopping food market where the home page and search results page have been created. Built for the HTML and CSS Capstone project in the Microverse curriculum.
 
 ![screenshot](./imgs/screenshot-shopping.png)
 ![screenshot](./imgs/search-page-screenshot.png)
